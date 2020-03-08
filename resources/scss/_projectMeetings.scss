@@ -1,0 +1,111 @@
+#project-meetings {
+  .vertical-image {
+    height: 100%;
+    width: 100%;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .cover-photo {
+    background-image: url('../img/math.jpeg');
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+  }
+
+  .meetings-title {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: 100%;
+    min-height: 300px;
+
+    .meetings-title-content {
+      position: absolute;
+      top: 50%;
+      padding: 0 50px;
+      width: 100%;
+
+      @media #{$mobile} {
+        top: 35%;
+      }
+
+      .meetings-title-content-inner {
+        max-width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+
+        h1 {
+          color: $white;
+          text-shadow: 1px 1px 1px #000;
+          font-size: 50px;
+        }
+
+        hr {
+          border-color: $point-green;
+        }
+      }
+    }
+  }
+
+  .meeting-minutes {
+    padding-top: 100px;
+  }
+
+  .meeting-heading {
+    position: relative;
+
+    h2 {
+      @media #{$mobile} {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #meeting-riga {
+    .meeting-heading {
+      background-color: $rvt-green;
+      color: $white;
+    }
+
+    .rvt-triangle {
+      border-top: 50px solid $rvt-green;
+    }
+  }
+
+  #meeting-porvoo {
+    .meeting-heading {
+      background-color: $point;
+      color: $white;
+    }
+
+    .point-triangle {
+      border-top: 50px solid $point;
+    }
+  }
+
+
+  #meeting-valga {
+    h2 {
+
+    }
+
+    .meeting-heading {
+      background-color: $valga-orange;
+      color: $white;
+    }
+
+    .point-triangle {
+      border-top: 50px solid $valga-orange;
+    }
+  }
+}

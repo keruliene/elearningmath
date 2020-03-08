@@ -1,0 +1,285 @@
+#project {
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .cover-photo {
+    background-image: url('../img/math1.jpg');
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+  }
+
+  .about-title {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: 100%;
+    min-height: 300px;
+
+    .about-title-content {
+      position: absolute;
+      top: 50%;
+      padding: 0 50px;
+      width: 100%;
+
+      @media #{$mobile} {
+        top: 35%;
+      }
+
+      .about-title-content-inner {
+        max-width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+
+        h1 {
+          color: $white;
+          text-shadow: 1px 1px 1px #000;
+          font-size: 50px;
+        }
+
+        hr {
+          border-color: $point-green;
+        }
+      }
+    }
+  }
+
+  hr {
+    border-color: $point;
+  }
+
+  .school-logos {
+    padding-bottom: 80px;
+  }
+}
+
+#participating-schools {
+  .modal-dialog { /* Width */
+    max-width: 100%;
+    width: auto !important;
+    display: inline-block;
+  }
+
+  .modal {
+    &.show {
+      text-align: center;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .school-info {
+    position: relative;
+  }
+
+  .school-title {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    @media #{$tablet, $desktop} {
+      height: 100%;
+      min-height: 600px;
+    }
+
+    .school-title-content {
+      @media #{$mobile} {
+        position: relative;
+      }
+
+      position: absolute;
+      top: 30%;
+      padding: 0 50px;
+      width: 100%;
+
+      .school-title-content-inner {
+        max-width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+
+    h1 {
+      color: $grey;
+      text-shadow: 1px 1px 1px #000;
+    }
+  }
+
+  #rvt {
+    background-color: $rvt-red;
+    color: white;
+
+    .rvt-triangle {
+      border-bottom: 50px solid $rvt-red;
+    }
+
+    #rvt-map {
+      height: 500px;
+      width: 100%;
+    }
+
+    .school-photo {
+      background-image: url('../img/schools/rvt.jpg');
+      min-height: 600px;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  #point {
+    background-color: $point;
+    color: white;
+
+    #point-map {
+      height: 500px;
+      width: 100%;
+    }
+
+    .point-triangle {
+      border-bottom: 50px solid $point;
+    }
+
+
+    .school-photo {
+      background-image: url('../img/schools/point.png');
+      min-height: 600px;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  #valga {
+    background-color: $valga-orange;
+    color: white;
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .valga-triangle {
+      border-bottom: 50px solid $valga-orange;
+    }
+
+    #valga-map {
+      height: 500px;
+      width: 100%;
+    }
+
+    .school-photo {
+      background-image: url('../img/schools/valga.jpg');
+      min-height: 600px;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  .social-icons {
+
+    .icon {
+      font-size: 30px;
+      width:70px;
+      height: 70px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      display: inline-block;
+      line-height: 70px;
+
+      &:hover {
+        webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .icon-facebook {
+      background: #3B5998;
+      color: white;
+
+      &:hover {
+        background: white;
+        color: #3B5998;
+      }
+    }
+
+    .icon-instagram {
+      background: #125688;
+      color: white;
+
+      &:hover {
+        background: white;
+        color: #125688;
+      }
+    }
+
+    .icon-youtube {
+      background: #bb0000;
+      color: white;
+
+      &:hover {
+        background: white;
+        color: #bb0000;
+      }
+    }
+
+    .icon-twitter {
+      background: #55ACEE;
+      color: white;
+
+      &:hover {
+        background: white;
+        color: #55ACEE;
+      }
+    }
+
+    .rvt.icon-home {
+      background-color: $rvt-green;
+      color: white;
+
+      &:hover {
+        background-color: white;
+        color: $rvt-green;
+      }
+    }
+
+    .valga.icon-home {
+      background-color: $valga-grey;
+      color: white;
+
+      &:hover {
+        background-color: white;
+        color: $valga-grey;
+      }
+    }
+
+    .point.icon-home {
+      background-color: $point-green;
+      color: white;
+
+      &:hover {
+        background-color: white;
+        color: $point-green;
+      }
+    }
+  }
+}

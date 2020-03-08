@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "variables";
+@import "home";
+@import "news";
+@import "about";
+@import "projectMeetings";
+@import "surveyOfTheStudents";
+@import "supportMaterialForTheTeachers";
+@import "eLearningMaterials";
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  background-color: white;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+h1, h2 {
+  font-size: 2.5rem;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 4px;
+  border-color: $nordplus-blue;
+  margin: 30px auto;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: $font;
+}
+
+.navbar-brand {
+  height: 2.5rem;
+  @media #{$desktop} {
+    height: 4.5rem;
+  }
+  > img {
+    height: 100%;
+    @media #{$desktop} {
+      padding: .5rem;
+    }
+    width: auto;
+  }
+}
+
+.navbar {
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  @media #{$desktop} {
+    padding: 0 1rem;
+  }
+}
+
+.nav-link {
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+
+  @media #{$tablet} {
+    padding: 1rem;
+  }
+  @media #{$desktop} {
+    padding: 1.5rem;
+  }
+}
+
+.navbar-toggleable-md {
+  .navbar-nav {
+    .dropdown-menu {
+      @media #{$mobile, $tablet} {
+        border: 0;
+      }
+    }
+    .nav-link {
+      @media #{$tablet, $desktop} {
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+    }
+  }
+
+  .container {
+    @media #{$mobile} {
+      position: static;
+      width: 100%;
+    }
+  }
+}
+
+.navbar-light {
+  .navbar-toggler {
+    border-radius: 0;
+  }
+  .navbar-nav {
+    .nav-link {
+      color: $grey;
+      &:hover, &:focus {
+        color: $nordplus-blue;
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  padding: 0;
+  margin:0;
+  font-size: 1.2rem;
+}
+
+.dropdown-item {
+  padding: 15px 1.5rem;
+
+  &:focus, &:hover {
+    background-color: transparent;
+    color: $nordplus-blue;
+  }
+
+  &:active {
+    background-color: transparent;
+    color: $nordplus-blue;
+  }
+}
+
+.content-vcenter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.school-logo {
+  width: 100%;
+  text-align: center;
+}
+
+//bg colors
+.bg-yellow {
+  background-color: $yellow;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-valga-yellow {
+  background-color: $valga-yellow;
+}
+footer {
+  padding: 30px 0;
+  text-align: center;
+  background-color: $grey;
+  color: white;
+  font-size: 16px;
+
+  p {
+    margin: 0;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+
+.triangle-up {
+  position: absolute;
+  top: -48px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  margin-left: -50px;
+}
+
+.triangle-down {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  margin-left: -50px;
+}
+
+//school buttons
+.rvt-btn {
+  cursor: pointer;
+  color: $rvt-red;
+  border: 3px solid $rvt-red;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $rvt-red;
+    color: $white;
+    border-color: $rvt-red;
+
+  }
+
+  &:active {
+    background-color: $rvt-red;
+    color: $white;
+    border-color: $rvt-red;
+
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.point-btn {
+  cursor: pointer;
+  color: $point;
+  border: 3px solid $point;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $point;
+    color: $white;
+    border-color: $point;
+  }
+
+  &:active {
+    background-color: $point;
+    color: $white;
+    border-color: $point;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+
+.point-btn-green {
+  cursor: pointer;
+  color: $point-green;
+  border: 3px solid $point-green;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $point-green;
+    color: $white;
+    border-color: $point-green;
+  }
+
+  &:active {
+    background-color: $point-green;
+    color: $white;
+    border-color: $point-green;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.valga-btn {
+  cursor: pointer;
+  color: $valga-grey;
+  border: 3px solid $valga-grey;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $valga-grey;
+    color: $white;
+    border-color: $valga-grey;
+
+  }
+
+  &:active {
+    background-color: $valga-grey;
+    color: $white;
+    border-color: $valga-grey;
+
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.nordplus-btn {
+  cursor: pointer;
+  color: $nordplus-blue;
+  border: 3px solid $nordplus-blue;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $nordplus-blue;
+    color: $white;
+    border-color: $nordplus-blue;
+
+  }
+
+  &:active {
+    background-color: $nordplus-blue;
+    color: $white;
+    border-color: $nordplus-blue;
+
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}

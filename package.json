@@ -1,0 +1,23 @@
+{
+  "name": "nordplus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss resources/scss/main.scss resources/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-js": "browserify js/app.js -o js/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "popper.js": "^1.12.6",
+    "roboto-fontface": "^0.8.0",
+    "roboto-regular": "^1.0.0"
+  }
+}

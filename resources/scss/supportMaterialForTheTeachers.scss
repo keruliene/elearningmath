@@ -1,0 +1,75 @@
+#support-material-for-the-teachers {
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .cover-photo {
+    background-image: url('../img/survey.jpeg');
+    min-height: 300px;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+  }
+
+  .support-title {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: 100%;
+    min-height: 300px;
+
+    .support-title-content {
+      position: absolute;
+      top: 50%;
+      padding: 0 50px;
+      width: 100%;
+
+      @media #{$mobile} {
+        top: 35%;
+      }
+
+      .support-title-content-inner {
+        max-width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+
+        h1 {
+          color: $white;
+          text-shadow: 1px 1px 1px #000;
+          font-size: 50px;
+
+          @media #{$mobile} {
+            font-size:40px;
+          }
+        }
+
+        hr {
+          border-color: $point-green;
+        }
+      }
+    }
+  }
+
+  .tutorial-title {
+    text-align: center;
+    h2 {
+      text-align: center;
+    }
+
+    .logo {
+      height: 100px;
+    }
+  }
+
+  .nordplus-btn {
+    @media #{$tablet, $desktop} {
+      width: 200px;
+    }
+  }
+}
